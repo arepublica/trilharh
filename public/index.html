@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8" />
@@ -9,52 +9,39 @@
     <meta name="author" content="A República">
     <title> TrilhaRH </title>
 
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">    
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">        
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-<!--
-    <style>
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #capleads {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #botao {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-    </style>
-    -->
 </head>
 
-<body class="container-fluid">
-    <div >
-        <header id="menu">
-            <!--<img src="images/logo.png" alt="Logomarca" class="">-->
-            <div class="logo-background">Logomarca</div>
-        </header>
-
-        <h1 id="titulo"> Trilha RH</h1>
-
-        <div class="captacao">
-            <h2>Para receber mais sobre o conteúdo, inscreva-se abaixo</h2>
-            <form id="capleads" action="">
-                <fieldset>
-                    <input id="cxemail" type="text" name="tEmail" id="cEmail" size="20" maxlength="30"
-                        placeholder="digite seu e-mail" />
-
-                    <input id="botao" type="submit" value="inscrição">
-                </fieldset>
-            </form>
-        </div>
+<body class="">
+    <h1>Trilha RH</h1>
+    <div class="col-md-4">
+        <form>
+            <div class="form-group">
+                <label for="lead-nome">Nome</label>
+                <input type="text" required class="form-control" id="lead-nome">
+            </div>
+            <div class="form-group">
+                <label for="lead-email">Email</label>
+                <input type="email" required class="form-control" id="lead-email">
+            </div>
+            <button class="btn btn-lg btn-block btn-primary" id="fClickLead" onclick="fSendLead()" > Enviar</button>
+        </form>
     </div>
+    <!-- Biblioteca Json para função getIp -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>  
+   
+    <script src="js/app.js"></script>
+    <script src="js/db-app.js"></script>
+
 </body>
 
 </html>
