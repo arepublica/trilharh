@@ -9,7 +9,7 @@
 }
 .container{
     height: 1215px;
-    width: 375px;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -17,7 +17,6 @@
 .primeiro{
     background-color: white;
     height: 142px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -34,13 +33,11 @@
 .segundo{
     background-color: lightgrey;
     height: 246px;
-    width: 100%;
 }
 
 .terceiro{
     background-color: white;
     height: 304px;
-    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -51,6 +48,8 @@
     line-height: 32px;
     color: #363636;
     margin-top: 20px;
+    width: 89.33%;
+    margin-left: 20px;
 }
 
 .terceiro>h2{
@@ -58,11 +57,14 @@
     font-size: 18px;
     line-height: 25px;
     color: black;
+    width: 89.33%;
+    margin-left: 20px;
 }
 
 .terceiro>form{
     align-self: center;
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 .botao{
@@ -72,19 +74,19 @@
     line-height: 23px;
     color: black;
     height: 51px;
-    width: 335px;
+    width: 89.33%;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
     box-shadow: none;
     margin-top: 34.5px;
+    margin-left: 20px;
 }
 
 .quarto{
     background-color: white;
     height: 526px;
-    width: 100%;
 }
 
 .data{
