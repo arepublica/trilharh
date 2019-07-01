@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>  
-        <meta charset = "utf-8"/>
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="A República">
-        <title> TrilhaRH </title>
-        
-        <style>
-            .container{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
 
-            #capleads{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="A República">
+    <title> TrilhaRH </title>
 
-            #botao{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-            }
-        </style>
-    </head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<!--
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    <body>
-        <div class="container">
-            <header id="cabecalho">
-			teste
-            </header>
-        
-            <h1 id="titulo"> Trilha RH</h1>
+        #capleads {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-            <div class="captacao">
-                <h2>Para receber mais sobre o conteúdo, inscreva-se abaixo</h2>
-                <form id="capleads" action="">
-                    <fieldset>
-                            <input id="cxemail" type="text" name="tEmail" id="cEmail" size="20" maxlength="30" placeholder="digite seu e-mail"/>
-                        
-                            <input id="botao" type="submit" value="inscrição">
-                    </fieldset>
-                </form>
-            </div>
+        #botao {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    </style>
+    -->
+</head>
+
+<body class="container-fluid">
+    <div >
+        <header id="menu">
+            <!--<img src="images/logo.png" alt="Logomarca" class="">-->
+            <div class="logo-background">Logomarca</div>
+        </header>
+
+        <h1 id="titulo"> Trilha RH</h1>
+
+        <div class="captacao">
+            <h2>Para receber mais sobre o conteúdo, inscreva-se abaixo</h2>
+            <form id="capleads" action="">
+                <fieldset>
+                    <input id="cxemail" type="text" name="tEmail" id="cEmail" size="20" maxlength="30"
+                        placeholder="digite seu e-mail" />
+
+                    <input id="botao" type="submit" value="inscrição">
+                </fieldset>
+            </form>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
