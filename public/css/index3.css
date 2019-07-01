@@ -3,9 +3,13 @@
 	font-family: 'FonteBase';
 	src: url("../fonts/Raleway-Regular.otf");
 }
+@font-face{
+	font-family: 'FonteTit';
+	src: url("../fonts/Raleway-Bold.otf");
+}
 .container{
     height: 1215px;
-    width: 100%;
+    width: 375px;
     display: flex;
     flex-direction: column;
 }
@@ -37,6 +41,44 @@
     background-color: white;
     height: 304px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.terceiro>h1{
+    font-family: 'FonteTit', sans-serif;
+    font-size: 30px;
+    line-height: 32px;
+    color: #363636;
+    margin-top: 20px;
+}
+
+.terceiro>h2{
+    font-family: 'FonteTit', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: black;
+}
+
+.terceiro>form{
+    align-self: center;
+    margin-top: 20px;
+}
+
+.botao{
+    background-color: #FA9917;
+    font-family: 'FonteTit', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    color: black;
+    height: 51px;
+    width: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: none;
+    margin-top: 34.5px;
 }
 
 .quarto{
@@ -47,6 +89,9 @@
 
 .data{
     background-color: white;
+    font-family: 'FonteTit', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
     height: 20px;
     width: 88.8%;
     margin-top: 52px;
@@ -56,6 +101,9 @@
 
 .titulo{
     background-color: lightgray;
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 25px;
+    line-height: 32px;
     margin-left: 5.33%;
     height: 193px;
     width: 89.33%;
@@ -64,16 +112,21 @@
 .autor{
     background-color: #008080;
     font-family: 'FonteLogo', sans-serif;
-    font-size: 16pt;
+    font-size: 16px;
+    line-height: 25px;
     color: white;
     margin-left: 5.33%;
     height: 30px;
     width: 44.8%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .texto{
     background-color: white;
     font-family: 'FonteLogo', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
     margin-left: 5.33%;
     margin-top: 10px;
     height: 51px;
