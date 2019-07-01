@@ -137,3 +137,26 @@
     height: 51px;
     width: 89.33%;
 }
+
+.quinto{
+    background-color: #C8C8C8;
+    height: 264px;
+}
+
+.sexto{
+    background-color: white;
+    height: 139px;
+}
+
+.sexto>footer#rodape{
+	clear: both; /*Faz com que o rodapé seja mostrado fora das configurações anteriores*/
+}
+
+.sexto>footer#rodape h1{
+	font-family: Arial, sans-serif;
+	font-style: italic;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 72px;
+}
