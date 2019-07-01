@@ -1,0 +1,35 @@
+body{
+    height: 1215px;
+    width: 375px;
+    display: flex;
+    flex-direction: column
+}
+
+.logo{
+    background-color: aqua;
+    height: 51px;
+    width: 142px;
+}
+.cont_principal{
+    background-color: aqua;
+    height: 264px;
+    width: 375px;
+}
+.segunda_parte{
+    background-color: aqua;
+    height: 304px;
+    width: 375px;
+}
+.email{
+    background-color: rgb(255, 0, 170);
+    height: 51px;
+    width: 335px;
+}
+.botao{
+    background-color: rgb(166, 255, 0);
+    height: 51px;
+    width: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

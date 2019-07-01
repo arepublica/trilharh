@@ -1,0 +1,81 @@
+@charset "UTF=8";
+@font-face{
+	font-family: 'FonteBase';
+	src: url("../fonts/Raleway-Regular.otf");
+}
+.container{
+    height: 1215px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.primeiro{
+    background-color: white;
+    height: 142px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.logo{
+    background-color: lightgray;
+    height: 51px;
+    width: 37.87%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.segundo{
+    background-color: lightgrey;
+    height: 246px;
+    width: 100%;
+}
+
+.terceiro{
+    background-color: white;
+    height: 304px;
+    width: 100%;
+}
+
+.quarto{
+    background-color: white;
+    height: 526px;
+    width: 100%;
+}
+
+.data{
+    background-color: white;
+    height: 20px;
+    width: 88.8%;
+    margin-top: 52px;
+    margin-left: 5.33%;
+    flex-grow: 1;
+}
+
+.titulo{
+    background-color: lightgray;
+    margin-left: 5.33%;
+    height: 193px;
+    width: 89.33%;
+}
+
+.autor{
+    background-color: #008080;
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 16pt;
+    color: white;
+    margin-left: 5.33%;
+    height: 30px;
+    width: 44.8%;
+}
+
+.texto{
+    background-color: white;
+    font-family: 'FonteLogo', sans-serif;
+    margin-left: 5.33%;
+    margin-top: 10px;
+    height: 51px;
+    width: 89.33%;
+}
