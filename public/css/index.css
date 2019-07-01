@@ -37,7 +37,6 @@
 
 .terceiro{
     background-color: white;
-    height: 330px;
     display: flex;
     flex-direction: column;
     box-shadow: 0px -0.25px 5px black;
@@ -197,32 +196,42 @@ a:hover{
     box-shadow: 0px -2px 4px black;
 }
 
-.posttexto{
+.textopost{
     font-family: 'FonteLogo', sans-serif;
-    font-size: 25px;
-    line-height: 32px;
-    margin-left: 5.33%;
-   /* height: 193px;*/
-    width: 89.33%;
-    background-color: white;
+   /* line-height: 32px;
+    margin-left: 5.33%;*/
+   padding: 30px;   
+   background-color: white;
 }
 
-.texto>p{
+p{
     font-family: 'FonteLogo', sans-serif;
     font-size: 16px;
-    line-height: 32px;
-    margin-left: 5.33%;
-   /* height: 193px;*/
-    width: 89.33%;
+    /*line-height: 32px;*/
     text-align: justify;
     background-color: white;
 }
 
-.posttexto>h1{
+.textopost>h1{
     font-family: 'FonteLogo', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 32px;
-    margin-left: 5.33%;
-    width: 89.33%;
     background-color: white;
+}
+
+.textopost>h5{
+    font-family: 'FonteLogo', sans-serif;
+    line-height: 32px;
+    background-color: white;
+}
+
+.subtit{
+    font-weight: bold ;
+    color:#363636;
+}
+.subtit2{
+    font-family: 'FonteBase', sans-serif;
+    line-height: 25px;
+    font-size: 20px;
+    color:#008080;
 }
