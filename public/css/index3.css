@@ -144,6 +144,23 @@
 .quinto{
     background-color: #C8C8C8;
     height: 264px;
+    display: flex;
+    justify-content: center;
+}
+
+.quinto>div#insta{
+    background-color: white;
+    height: 205px;
+    width: 212px;
+    margin-bottom: 29.5px;
+    margin-top: 29.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    line-height: 25px;
 }
 
 .sexto{
