@@ -7,41 +7,90 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="A República">
+
     <title> TrilhaRH </title>
 
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">        
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/index3.css">
 </head>
 
-<body class="">
-    <h1>Trilha RH</h1>
-    <div class="col-md-4">
-        <form>
-            <div class="form-group">
-                <label for="lead-nome">Nome</label>
-                <input type="text" required class="form-control" id="lead-nome">
+<body>
+    <div class="conteudo">
+        <div class="primeiro">
+            <div class="logo">
+
             </div>
-            <div class="form-group">
-                <label for="lead-email">Email</label>
-                <input type="email" required class="form-control" id="lead-email">
-            </div>
-            <button class="btn btn-lg btn-block btn-primary" id="fClickLead" onclick="fSendLead()" > Enviar</button>
-        </form>
+        </div>
+
+        <div class="segundo">
+
+        </div>
+
+        <div class="terceiro">
+            <h1>Chamada top de linha para conversão</h1>
+            <h2>Descrição da chamada top pronta para trazer 3000 leads!!</h2>
+
+            <form action="" class="formulario">
+                <div class="form-group">
+                    <input type="text" required class="form-control" id="lead-nome" size="30" maxlength="40"
+                        placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                    <input type="email" required class="form-control" id="lead-email" maxlength="120"
+                        placeholder="Digite aqui seu e-mail">
+                </div>
+                <button class="botao" id="fClickLead" onclick="fSendLead()"> Inscreva-se!</button>
+            </form>
+
+            <!--   <input size="40" maxlength="40" placeholder="digite aqui seu e-mail" />
+             <input class="botao" type="submit" value="Inscreva-se">-->
+
+        </div>
+
+        <div class="quarto">
+            <div class="data">01/07/2019</div>
+            <div class="titulo"> <a href="posts/post1.html">As novas tendências do RH em 2019/2020</a></div>
+            <div class="autor">A República</div>
+            <div class="texto">Lorem ipsdigium dolor sit amet, consectetuer adipiscing elit,</div>
+
+            <div class="data">01/07/2019</div>
+            <div class="titulo"><a href="post/post2/post2.html">3 Dicas para economizar na hora de contratar</a></div>
+            <div class="autor">A República</div>
+            <div class="texto">Lorem ipsdigium dolor sit amet, consectetuer adipiscing elit,</div>
+
+            <div class="data">01/07/2019</div>
+            <div class="titulo"><a href="post/post2/post2.html">9 características comportamentais que todo gestor de
+                    equipes deve ter.</a></div>
+            <div class="autor">A República</div>
+            <div class="texto">Lorem ipsdigium dolor sit amet, consectetuer adipiscing elit,</div>
+
+        </div>
+
+        <div class="quinto">
+
+        </div>
+
+        <div class="sexto">
+            <footer id="rodape">
+                <h1> &copy; Copyright 2019 - by A República </h1>
+            </footer>
+        </div>
+
     </div>
+
     <!-- Biblioteca Json para função getIp -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
+
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
 
     <!-- Add Firebase products that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>  
-   
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+
     <script src="js/app.js"></script>
     <script src="js/db-app.js"></script>
-
 </body>
 
 </html>

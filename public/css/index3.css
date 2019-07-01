@@ -7,13 +7,12 @@
 	font-family: 'FonteTit';
 	src: url("../fonts/Raleway-Bold.otf");
 }
-.container{
-    height: 1893px;
+.conteudo{
+    /*height: 1893px;*/
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-
 .primeiro{
     background-color: white;
     height: 142px;
@@ -33,15 +32,15 @@
 .segundo{
     background-color: lightgrey;
     height: 246px;
-    box-shadow: 0px -2px 4px black;
+    box-shadow: 0px -0.25px 5px black;
 }
 
 .terceiro{
     background-color: white;
-    height: 304px;
+    height: 330px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px -2px 4px black;
+    box-shadow: 0px -0.25px 5px black;
 }
 
 .terceiro>h1{
@@ -49,7 +48,7 @@
     font-size: 30px;
     line-height: 32px;
     color: #363636;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 89.33%;
     margin-left: 20px;
 }
@@ -63,10 +62,14 @@
     margin-left: 20px;
 }
 
+.formulario>input{
+    margin: 10px;
+}
+
 .terceiro>form{
     align-self: center;
-    margin-top: 20px;
-    margin-left: 20px;
+   /* margin-top: 20px;
+    margin-left: 20px;*/
 }
 
 .botao{
@@ -82,14 +85,14 @@
     align-items: center;
     border: none;
     box-shadow: none;
-    margin-top: 34.5px;
-    margin-left: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
 .quarto{
     background-color: white;
-    height: 783px;
-    box-shadow: 0px -2px 4px black;
+    /*height: 783px;*/
+    box-shadow: 0px -0.25px 5px black;
 }
 
 .data{
@@ -159,4 +162,50 @@
     line-height: 20px;
     text-align: center;
     margin-top: 72px;
+}
+
+a{
+    color: #363636;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #363636;
+    text-decoration: underline;
+}
+
+.postimg{
+    background-color: white;
+    /*height: 783px;*/
+    box-shadow: 0px -2px 4px black;
+}
+
+.posttexto{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 25px;
+    line-height: 32px;
+    margin-left: 5.33%;
+   /* height: 193px;*/
+    width: 89.33%;
+    background-color: white;
+}
+
+.texto>p{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    margin-left: 5.33%;
+   /* height: 193px;*/
+    width: 89.33%;
+    text-align: justify;
+    background-color: white;
+}
+
+.posttexto>h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 25px;
+    line-height: 32px;
+    margin-left: 5.33%;
+    width: 89.33%;
+    background-color: white;
 }

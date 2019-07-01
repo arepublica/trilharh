@@ -1,9 +1,23 @@
 //var salvarLead = document.getElementById('salvarlead');
 var leadnome = document.getElementById('lead-nome');
 var leademail = document.getElementById('lead-email');
-//const leadIp = ""
+
+$(document).ready(function () {
+    $.getJSON('http://ip-api.com/json?callback=?', function (data) {
+        let leadIp = "";
+        var e = JSON.stringify(data.query, null, 2);
+        leadIp = e
+       // alert(leadIp)
+    });
+});
+
 
 function fSendLead() {
+    /* var ipCli=""
+     $.getJSON('http://ip-api.com/json?callback=?', function (data) {
+         var e = JSON.stringify(data.query, null, 2);
+         ipCli = e
+     });*/
     var data = new Date();
     // Guarda cada pedaço em uma variável
     var dia = data.getDate();           // 1-31
@@ -45,7 +59,7 @@ function fSendLead() {
         nome: leadnome.value,
         email: leademail.value,
         dtInsc: str_data,
-        //ip: "ip"
+        ip: leadIp
     };
     firebase.database().ref().child('leads').push(lead)
 }

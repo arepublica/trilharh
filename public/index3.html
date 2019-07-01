@@ -17,40 +17,55 @@
 </head>
 
 <body>
-    <div class="container">
-
+    <div class="conteudo">
         <div class="primeiro">
             <div class="logo">
-                
-            </div>
 
+            </div>
         </div>
 
         <div class="segundo">
-            
+
         </div>
 
         <div class="terceiro">
             <h1>Chamada top de linha para conversão</h1>
             <h2>Descrição da chamada top pronta para trazer 3000 leads!!</h2>
-            <form action="get">
-                <input size="40" maxlength="40" placeholder="digite aqui seu e-mail"/>
+
+            <form action="" class="formulario">
+                <div class="form-group">
+                    <input type="text" required class="form-control" id="lead-nome" size="30" maxlength="40"
+                        placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                    <input type="email" required class="form-control" id="lead-email" maxlength="120"
+                        placeholder="Digite aqui seu e-mail">
+                </div>
+                <button class="botao" id="fClickLead" onclick="fSendLead()"> Inscreva-se!</button>
             </form>
-            
-            <input class="botao" type="submit" value="Inscreva-se">
-            
+
+            <!--   <input size="40" maxlength="40" placeholder="digite aqui seu e-mail" />
+             <input class="botao" type="submit" value="Inscreva-se">-->
+
         </div>
 
         <div class="quarto">
             <div class="data">01/07/2019</div>
-            <div class="titulo">Título do blogspot</div>
-            <div class="autor">Paulinho da Viola</div>
+            <div class="titulo"> <a href="posts/post1.html">As novas tendências do RH em 2019/2020</a></div>
+            <div class="autor">A República</div>
             <div class="texto">Lorem ipsdigium dolor sit amet, consectetuer adipiscing elit,</div>
 
             <div class="data">01/07/2019</div>
-            <div class="titulo">Título do blogspot</div>
-            <div class="autor">Paulinho da Viola</div>
+            <div class="titulo"><a href="post/post2/post2.html">3 Dicas para economizar na hora de contratar</a></div>
+            <div class="autor">A República</div>
             <div class="texto">Lorem ipsdigium dolor sit amet, consectetuer adipiscing elit,</div>
+
+            <div class="data">01/07/2019</div>
+            <div class="titulo"><a href="post/post2/post2.html">9 características comportamentais que todo gestor de
+                    equipes deve ter.</a></div>
+            <div class="autor">A República</div>
+            <div class="texto">Lorem ipsdigium dolor sit amet, consectetuer adipiscing elit,</div>
+
         </div>
 
         <div class="quinto">
@@ -64,6 +79,18 @@
         </div>
 
     </div>
+
+    <!-- Biblioteca Json para função getIp -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/db-app.js"></script>
 </body>
 
 </html>
