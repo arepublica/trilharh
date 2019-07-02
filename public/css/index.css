@@ -39,9 +39,16 @@ p{
 }
 
 .segundo{
-    background-color: lightgrey;
+    background-color: #008080;
     height: 246px;
     box-shadow: 0px -0.25px 5px black;
+    display: flex;
+    justify-content: center;
+}
+
+.capa{
+    height: 246px;
+    width: 375px;
 }
 
 .terceiro{
