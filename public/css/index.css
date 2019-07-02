@@ -32,7 +32,6 @@ p{
 }
 
 .logo{
-    background-color: lightgray;
     height: 51px;
     width: 37.87%;
     margin-left: 20px;
@@ -122,6 +121,9 @@ p{
 }
 
 .titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     background-color: lightgray;
     font-family: 'FonteLogo', sans-serif;
     font-size: 25px;
