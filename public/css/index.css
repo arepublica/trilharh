@@ -7,6 +7,16 @@
 	font-family: 'FonteTit';
 	src: url("../fonts/Raleway-Bold.otf");
 }
+
+
+p{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 16px;
+    /*line-height: 32px;*/
+    text-align: justify;
+    background-color: white;
+}
+
 .conteudo{
     /*height: 1893px;*/
     width: 100%;
@@ -38,6 +48,7 @@
 .terceiro{
     background-color: white;
     display: flex;
+    height: 346px;
     flex-direction: column;
     box-shadow: 0px -0.25px 5px black;
 }
@@ -59,6 +70,10 @@
     color: black;
     width: 89.33%;
     margin-left: 20px;
+}
+
+.formulario{
+    margin: 10px;
 }
 
 .formulario>input{
@@ -203,13 +218,9 @@ a:hover{
    padding: 30px;   
    background-color: white;
 }
-
-p{
-    font-family: 'FonteLogo', sans-serif;
-    font-size: 16px;
-    /*line-height: 32px;*/
-    text-align: justify;
-    background-color: white;
+.linktexto{
+    color:#008080;
+    text-decoration:underline;
 }
 
 .textopost>h1{
@@ -218,13 +229,11 @@ p{
     line-height: 32px;
     background-color: white;
 }
-
 .textopost>h5{
     font-family: 'FonteLogo', sans-serif;
     line-height: 32px;
     background-color: white;
 }
-
 .subtit{
     font-weight: bold ;
     color:#363636;
