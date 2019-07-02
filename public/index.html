@@ -37,8 +37,6 @@
             <h2>Assine a nossa newsletter e aprenda a economizar na hora da contratação</h2>
 
             <form name="leads" method="POST" data-netlify="true" netlify class="formulario">
-                <input type="text" name="ip" id="lead-ip" hidden>
-                <input type="text" name="dthora" id="lead-data" hidden>
                 <div class="form-group">
                     <input type="text" required class="form-control" name="nome" id="lead-nome" size="30" maxlength="40"
                         placeholder="Digite seu nome">
@@ -47,6 +45,8 @@
                     <input type="email" required class="form-control" name="email" id="lead-email" maxlength="120"
                         placeholder="Digite aqui seu e-mail">
                 </div>
+                <input type="text" name="ip" id="lead-ip" hidden>
+                <input type="text" name="data_hora" id="lead-data" hidden>
                 <button class="botao" id="fClickLead" type="submit"> Inscreva-se!</button>
             </form>
 
@@ -102,8 +102,20 @@
                 }
             );
             let data = new Date();
-            //let adate = data.getDate()+'/'+(data.getMonth()+1)+'/'+data.getFullYear()+' - '+data.getHours()+':'+data.getMinutes();
-            let dataEnd = data.toLocaleDateString('pt-br');
+            let mes = data.getMonth()+1;
+            let dia = data.getDay();
+            let ano = data.getFullYear();
+
+            if (mes<= 9) {
+                let m = '0' + mes
+                mes = m
+            };
+
+            if (dia <= 9) {
+                let d = '0' + dia
+                dia = d
+            };
+            let dataEnd = ano + '-' + mes + '-' + dia 
             let horaEnd = data.toLocaleTimeString();
             document.getElementById("lead-data").value = dataEnd + ' - ' + horaEnd;
         });
