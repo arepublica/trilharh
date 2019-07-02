@@ -8,7 +8,6 @@
 	src: url("../fonts/Raleway-Bold.otf");
 }
 
-
 p{
     font-family: 'FonteLogo', sans-serif;
     font-size: 16px;
@@ -241,9 +240,14 @@ a:hover{
     color:#363636;
 }
 
+.pNegrito{
+    font-weight: bold;
+}
+
 .textopost>h5{
     font-family: 'FonteLogo', sans-serif;
     line-height: 32px;
+    font-weight: bold;
     background-color: white;
     color:#363636;
 }
