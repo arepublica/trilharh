@@ -92,14 +92,13 @@ p{
     line-height: 23px;
     color: black;
     height: 51px;
-    width: 89.33%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
     box-shadow: none;
     margin-top: 15px;
-    margin-left: 10px;
 }
 
 .quarto{
@@ -229,12 +228,17 @@ a:hover{
     font-family: 'FonteLogo', sans-serif;
     font-size: 30px;
     line-height: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
     background-color: white;
+    color:#363636;
 }
+
 .textopost>h5{
     font-family: 'FonteLogo', sans-serif;
     line-height: 32px;
     background-color: white;
+    color:#363636;
 }
 .subtit{
     font-weight: bold ;
