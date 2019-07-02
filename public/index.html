@@ -21,10 +21,10 @@
     <div class="conteudo">
         <div class="primeiro">
             <div class="logo">
-                    <img src="logos/logo.png" height="100%" usemap="#pag_inicial">
-                    <map name="pag_inicial">
-                        <area shape="circle" coords="25,25,25" href="https://trilharh.com.br/" target="_self">
-                    </map>
+                <img src="logos/logo.png" height="100%" usemap="#pag_inicial">
+                <map name="pag_inicial">
+                    <area shape="circle" coords="25,25,25" href="https://trilharh.com.br/" target="_self">
+                </map>
             </div>
         </div>
 
@@ -36,16 +36,18 @@
             <h1>Reduza seus custos de turnover!</h1>
             <h2>Assine a nossa newsletter e aprenda a economizar na hora da contratação</h2>
 
-            <form action="" class="formulario">
+            <form name="leads" method="POST" data-netlify="true" netlify class="formulario">
+                <input type="text" name="ip" id="lead-ip" hidden>
+                <input type="text" name="dthora" id="lead-data" hidden>
                 <div class="form-group">
-                    <input type="text" required class="form-control" id="lead-nome" size="30" maxlength="40"
+                    <input type="text" required class="form-control" name="nome" id="lead-nome" size="30" maxlength="40"
                         placeholder="Digite seu nome">
                 </div>
                 <div class="form-group">
-                    <input type="email" required class="form-control" id="lead-email" maxlength="120"
+                    <input type="email" required class="form-control" name="email" id="lead-email" maxlength="120"
                         placeholder="Digite aqui seu e-mail">
                 </div>
-                <button class="botao" id="fClickLead" onclick="fSendLead()"> Inscreva-se!</button>
+                <button class="botao" id="fClickLead" type="submit"> Inscreva-se!</button>
             </form>
 
             <!--   <input size="40" maxlength="40" placeholder="digite aqui seu e-mail" />
@@ -54,25 +56,25 @@
         </div>
 
         <div class="quarto">
-                <div class="data">01/07/2019</div>
-                <div class="titulo"><a href="posts/post1.html">As novas tendências do RH em 2019/2020</a></div>
-                <div class="autor">A República</div>
-                <div class="texto"><a href="posts/post1.html">A cada dia que passa, o mercado de trabalho se torna mais
-                        competitivo...</a> </div>
-    
-                <div class="data">01/07/2019</div>
-                <div class="titulo"><a href="posts/post2.html">Tecnologia na Gestão de Pessoas </a></div>
-                <div class="autor">A República</div>
-                <div class="texto"><a href="posts/post2.html"></a>Todos os dias, surgem tendências e uma série de
-                    ferramentas vantajosas...</a></div>
-    
-                <div class="data">01/07/2019</div>
-                <div class="titulo"><a href="posts/post3.html">9 características comportamentais que todo gestor de
-                        equipes deve ter</a></div>
-                <div class="autor">A República</div>
-                <div class="texto"><a href="posts/post3.html">No contexto empresarial atual para que colaboradores
-                        obtenham sucesso ...</a>
-                </div>
+            <div class="data">01/07/2019</div>
+            <div class="titulo"><a href="posts/post1.html">As novas tendências do RH em 2019/2020</a></div>
+            <div class="autor">A República</div>
+            <div class="texto"><a href="posts/post1.html">A cada dia que passa, o mercado de trabalho se torna mais
+                    competitivo...</a> </div>
+
+            <div class="data">01/07/2019</div>
+            <div class="titulo"><a href="posts/post2.html">Tecnologia na Gestão de Pessoas </a></div>
+            <div class="autor">A República</div>
+            <div class="texto"><a href="posts/post2.html"></a>Todos os dias, surgem tendências e uma série de
+                ferramentas vantajosas...</a></div>
+
+            <div class="data">01/07/2019</div>
+            <div class="titulo"><a href="posts/post3.html">9 características comportamentais que todo gestor de
+                    equipes deve ter</a></div>
+            <div class="autor">A República</div>
+            <div class="texto"><a href="posts/post3.html">No contexto empresarial atual para que colaboradores
+                    obtenham sucesso ...</a>
+            </div>
         </div>
 
         <div class="quinto">
@@ -92,14 +94,20 @@
 
     <!-- Biblioteca Json para função getIp -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
-    <!-- Add Firebase products that you want to use -->
-    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
-
-    <script src="js/app.js"></script>
-    <script src="js/db-app.js"></script>
+    <script>
+        $(function () {
+            $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+                function (json) {
+                    document.getElementById("lead-ip").value = json.ip;
+                }
+            );
+            let data = new Date();
+            //let adate = data.getDate()+'/'+(data.getMonth()+1)+'/'+data.getFullYear()+' - '+data.getHours()+':'+data.getMinutes();
+            let dataEnd = data.toLocaleDateString('pt-br');
+            let horaEnd = data.toLocaleTimeString();
+            document.getElementById("lead-data").value = dataEnd + ' - ' + horaEnd;
+        });
+    </script>
 </body>
 
 </html>
