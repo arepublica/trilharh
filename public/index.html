@@ -38,7 +38,7 @@
             <h1>Reduza seus custos de turnover!</h1>
             <h2>Assine a nossa newsletter e aprenda a economizar na hora da contratação</h2>
 
-            <form name="leads" method="POST" data-netlify="true" netlify class="formulario">
+            <form name="leads" method="POST" data-netlify="true" netlify class="formulario" action="http://www.trilharh.com.br">
                 <div class="form-group">
                     <input type="text" required class="form-control" name="nome" id="lead-nome" size="30" maxlength="40"
                         placeholder="Digite seu nome">
@@ -52,27 +52,6 @@
                 <button class="botao" id="fClickLead" type="submit" data-toggle="modal" data-target="#leadModal">
                     Inscreva-se!</button>
             </form>
-
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <div class="quarto">
@@ -117,26 +96,16 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="leadModalLabel">Nova mensagem</h5>
+                        <h5 class="modal-title" id="leadModalLabel">Obrigado!</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Destinatário:</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                            </div>
-                            <div class="form-group">
-                                <label for="message-text" class="col-form-label">Mensagem:</label>
-                                <textarea class="form-control" id="message-text"></textarea>
-                            </div>
-                        </form>
+                    <div class="modal-body">   
+                        <p>Agora você faz parte da nossa newsletter. Prepare-se para receber conteúdos incríveis!</p>                     
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary">Enviar</button>
                     </div>
                 </div>
             </div>
