@@ -24,17 +24,17 @@ p{
 }
 .primeiro{
     background-color: white;
-    height: 142px;
+    /*height: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-end;*/
 }
 
 .logo{
     height: 51px;
     width: 37.87%;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    /*margin-left: 20px;
+    margin-bottom: 20px;*/
 }
 
 .segundo{

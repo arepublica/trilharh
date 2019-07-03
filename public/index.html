@@ -15,18 +15,39 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    
+    <script src="https://kit.fontawesome.com/d9cfedd54c.js"></script>
 </head>
 
 <body>
     <div class="conteudo">
         <div class="primeiro">
-            <div class="logo">
-                <img src="logos/logo.png" height="100%" usemap="#pag_inicial">
-                <map name="pag_inicial">
-                    <area shape="circle" coords="25,25,25" href="https://trilharh.com.br/" target="_self">
-                </map>
-            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <div class="logo">
+                        <img src="logos/logo.png" height="100%" usemap="#pag_inicial">
+                        <map name="pag_inicial">
+                            <area shape="circle" coords="25,25,25" href="https://trilharh.com.br/" target="_self">
+                        </map>
+                    </div>
+                </a>
+                <!--
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blogpost </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ebook em breve</a>
+                        </li>
+                    </ul>
+                </div>
+                -->
+            </nav>
         </div>
 
         <div class="segundo">
@@ -38,18 +59,23 @@
             <h2>Assine a nossa newsletter e aprenda a economizar na hora da contratação</h2>
 
             <form name="leads" method="POST" data-netlify="true" netlify class="formulario" action="/index">
-                <div class="form-group">
-                    <input type="text" required class="form-control" name="nome" id="lead-nome" size="30" maxlength="40"
-                        placeholder="Digite seu nome">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><span class="far fa-user"></span></div>
+                    </div>
+                    <input type="text" required class="form-control " name="nome" id="lead-nome" size="30"
+                        maxlength="40" placeholder="Digite seu nome">
                 </div>
-                <div class="form-group">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><span class="far fa-envelope"></span></div>
+                    </div>
                     <input type="email" required class="form-control" name="email" id="lead-email" maxlength="120"
                         placeholder="Digite aqui seu e-mail">
                 </div>
                 <input type="text" name="ip" id="lead-ip" hidden>
                 <input type="text" name="datahora" id="lead-datahora" hidden>
-                <button class="botao" id="fClickLead" type="submit">
-                    Inscreva-se!</button>
+                <button class="botao" id="fClickLead" type="submit">Inscreva-se!</button>
             </form>
         </div>
 
@@ -66,12 +92,14 @@
                 </a>
             </div>
             <div class="autor">Fábio Barcelos</div>
-            <div class="texto"><a href="posts/tecnologia-na-gestao-de-pessoas.html"></a>Todos os dias, surgem tendências
+            <div class="texto"><a href="posts/tecnologia-na-gestao-de-pessoas.html"></a>Todos os dias, surgem
+                tendências
                 e uma série de
                 ferramentas vantajosas...</a></div>
 
             <div class="data">02/07/2019</div>
-            <div class="titulo"><a href="posts/gestor-de-equipes.html">Gestão de equipe na prática: 9 dicas para gestor
+            <div class="titulo"><a href="posts/gestor-de-equipes.html">Gestão de equipe na prática: 9 dicas para
+                    gestor
                     de equipes.</a></div>
             <div class="autor">Pedro Mendes</div>
             <div class="texto"><a href="posts/gestor-de-equipes.html">No cenário de empresarial atual para que
@@ -79,7 +107,7 @@
             </div>
         </div>
 
-       <!--  <div class="quinto">
+        <!--  <div class="quinto">
             <div id="insta">
                 <a href="https://www.instagram.com/trilharh/">@trilharh
                 </a>
@@ -89,7 +117,14 @@
         <div class="sexto">
             <footer id="rodape">
                 <h1> &copy; Copyright 2019 - by A República </h1>
-                <h2><a href="https://www.facebook.com/trilharrh" target="_blank"> Facebook </a>|<a href="https://www.instagram.com/trilharh/" target="_blank"> Instagram </a>|<a href="https://www.linkedin.com/company/trilharh" target="_blank"> LinkedIn </a> </h2>
+                <h2>
+                    <span class="fab fa-facebook-square"></span><a href="https://www.facebook.com/trilharrh"
+                        target="_blank"> Facebook </a>|
+                    <span class="fab fa-instagram"></span><a href="https://www.instagram.com/trilharh/" target="_blank">
+                        Instagram </a>|
+                    <span class="fab fa-linkedin"></span><a href="https://www.linkedin.com/company/trilharh"
+                        target="_blank"> LinkedIn </a>
+                </h2>
             </footer>
         </div>
         <div class="modal fade" id="leadModal" tabindex="-1" role="dialog" aria-labelledby="leadModalLabel"
@@ -103,7 +138,8 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>Agora você faz parte da nossa newsletter. Prepare-se para receber conteúdos incríveis!</p>
+                        <p>Agora você faz parte da nossa newsletter. Prepare-se para receber conteúdos incríveis!
+                        </p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -112,7 +148,6 @@
             </div>
         </div>
     </div>
-
     <!-- Bibliotecas Js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -126,7 +161,7 @@
         crossorigin="anonymous"></script>
 
     <script>
-        $(document).ready(function () {    
+        $(document).ready(function () {
             let data = new Date();
             let mes = data.getMonth() + 1;
             let dia = data.getDay();
@@ -169,7 +204,15 @@
                 document.getElementById("lead-ip").value = json.ip;
             });
         });
+
+        function download(url, nome) {
+            var link = document.createElement("a");
+            link.download = nome;
+            link.href = url;
+            link.click();
+        }
     </script>
+
 </body>
 
 </html>
