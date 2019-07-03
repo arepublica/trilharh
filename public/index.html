@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    
 </head>
 
 <body>
@@ -48,7 +49,7 @@
                         placeholder="Digite aqui seu e-mail">
                 </div>
                 <input type="text" name="ip" id="lead-ip" hidden>
-                <input type="text" name="datahora" id="lead-data" hidden>
+                <input type="text" name="datahora" id="lead-datahora" hidden>
                 <button class="botao" id="fClickLead" type="submit">
                     Inscreva-se!</button>
             </form>
@@ -113,9 +114,9 @@
         </div>
     </div>
 
-    <!-- Biblioteca Json para função getIp -->
+    <!-- Bibliotecas Js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -126,12 +127,7 @@
         crossorigin="anonymous"></script>
 
     <script>
-        $(function () {
-            $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
-                function (json) {
-                    document.getElementById("lead-ip").value = json.ip;
-                }
-            );
+        $(document).ready(function () {    
             let data = new Date();
             let mes = data.getMonth() + 1;
             let dia = data.getDay();
@@ -165,9 +161,14 @@
                 seg = s
             };
 
-            let dataInc = ano + '-' + mes + '-' + dia;
-            let horaInc = hora + ':' + min + ':' + seg;
-            document.getElementById("lead-data").value = dataInc + ' - ' + horaInc;
+            let dataInc = `${ano}-${mes}-${dia}`;
+            let horaInc = `${hora}:${min}:${dia}`;
+            let datahora = `${dataInc} - ${horaInc}`
+            document.getElementById("lead-datahora").value = datahora;
+
+            $.getJSON("https://api.ipify.org?format=jsonp&callback=?", function (json) {
+                document.getElementById("lead-ip").value = json.ip;
+            });
         });
     </script>
 </body>
