@@ -66,30 +66,36 @@
             <img src="logos/TRILHARH-BANNER.png" height="100%" width="100%">
         </div>
 
-        <div class="terceiro">
-            <h2> Reduza seus custos de turnover!</h2>
-            <h5> Baixe o e-book e aprenda a contratar e reter bons funcionários.</h5>
 
-            <form name="leads" method="POST" data-netlify="true" netlify class="formulario" action="/index"
-                onsubmit="downEbook()">
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text"><span class="far fa-user"></span></div>
+        <div class="terceiro row">
+            <div class="col-lg-7 col-sm-10">
+                <h1>Ebook Gratuito! <br>
+                    Economize na hora de contratar
+                </h1>
+                <h5>13 dicas para reduzir seu turnover, contratar com maior assertividade e reter talentos.</h5>
+            </div>
+            <div class="col-lg-3 col-sm-10">
+                <form name="leads" method="POST" data-netlify="true" netlify class="formulario" action="/index"
+                    onsubmit="downEbook()">
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><span class="far fa-user"></span></div>
+                        </div>
+                        <input type="text" required class="form-control " name="nome" id="lead-nome" size="30"
+                            maxlength="40" placeholder="Digite seu nome">
                     </div>
-                    <input type="text" required class="form-control " name="nome" id="lead-nome" size="30"
-                        maxlength="40" placeholder="Digite seu nome">
-                </div>
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text"><span class="far fa-envelope"></span></div>
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><span class="far fa-envelope"></span></div>
+                        </div>
+                        <input type="email" required class="form-control" name="email" id="lead-email" maxlength="120"
+                            placeholder="Digite aqui seu e-mail">
                     </div>
-                    <input type="email" required class="form-control" name="email" id="lead-email" maxlength="120"
-                        placeholder="Digite aqui seu e-mail">
-                </div>
-                <input type="text" name="ip" id="lead-ip" hidden>
-                <input type="text" name="datahora" id="lead-datahora" hidden>
-                <button class="botao" id="fClickLead" type="submit">Baixe Agora!</button>
-            </form>
+                    <input type="text" name="ip" id="lead-ip" hidden>
+                    <input type="text" name="datahora" id="lead-datahora" hidden>
+                    <button class="botao" id="fClickLead" type="submit">Baixe Agora!</button>
+                </form>
+            </div>
         </div>
 
         <div class="quarto">
@@ -159,7 +165,7 @@
 
         <div class="sexto">
             <footer id="rodape">
-                <h1> &copy; Copyright 2019 - by A República </h1>
+                <h1> &copy; Copyright 2019 - by Trilha RH </h1>
                 <h2>
                     <span class="fab fa-facebook-square"></span><a href="https://www.facebook.com/trilharrh"
                         target="_blank"> Facebook </a>|
@@ -169,26 +175,6 @@
                         target="_blank"> LinkedIn </a>
                 </h2>
             </footer>
-        </div>
-        <div class="modal fade" id="leadModal" tabindex="-1" role="dialog" aria-labelledby="leadModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="leadModalLabel">Obrigado!</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Agora você faz parte da nossa newsletter. Prepare-se para receber conteúdos incríveis!
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- Bibliotecas Js -->
