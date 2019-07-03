@@ -39,7 +39,7 @@
                         </map>
                     </div>
                 </a>
-                <a class="navbar-brand" href="ebook.html">
+                <a class="navbar-brand" href="#">
                     <button class="btn" id="btn-ebook">Baixar nosso e-book</button>
                 </a>
                 <!--
@@ -62,102 +62,37 @@
             </nav>
         </div>
 
-        <div class="segundo">
-            <img src="logos/TRILHARH-BANNER.png" height="100%" width="100%">
-        </div>
+        <div class="ebook row">
+            <div class="col-md-8 col-sm-12">
+                <h2>Ebook Gratuito! <br>
+                    Economize na hora de contratar
+                </h2>
+                <h5>13 dicas para reduzir seu turnover, contratar com maior assertividade e reter talentos.</h5>
+            </div>
 
-        <div class="terceiro">
-            <h1>Ebook Gratuito! <br>
-                Economize na hora de contratar
-            </h1>
-            <h2>13 dicas para reduzir seu turnover, contratar com maior assertividade e reter talentos.</h2>
-
-            <form name="leads" method="POST" data-netlify="true" netlify class="formulario" action="/index"
-                onsubmit="downEbook()">
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text"><span class="far fa-user"></span></div>
+            <div class="col-md-4 col-sm-12">
+                <form name="leads" method="POST" data-netlify="true" netlify class="formulario" action="/index"
+                    onsubmit="downEbook()">
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><span class="far fa-user"></span></div>
+                        </div>
+                        <input type="text" required class="form-control " name="nome" id="lead-nome" size="30"
+                            maxlength="40" placeholder="Digite seu nome">
                     </div>
-                    <input type="text" required class="form-control " name="nome" id="lead-nome" size="30"
-                        maxlength="40" placeholder="Digite seu nome">
-                </div>
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text"><span class="far fa-envelope"></span></div>
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><span class="far fa-envelope"></span></div>
+                        </div>
+                        <input type="email" required class="form-control" name="email" id="lead-email" maxlength="120"
+                            placeholder="Digite aqui seu e-mail">
                     </div>
-                    <input type="email" required class="form-control" name="email" id="lead-email" maxlength="120"
-                        placeholder="Digite aqui seu e-mail">
-                </div>
-                <input type="text" name="ip" id="lead-ip" hidden>
-                <input type="text" name="datahora" id="lead-datahora" hidden>
-                <button class="botao" id="fClickLead" type="submit">Baixe Agora!</button>
-            </form>
+                    <input type="text" name="ip" id="lead-ip" hidden>
+                    <input type="text" name="datahora" id="lead-datahora" hidden>
+                    <button class="botao" id="fClickLead" type="submit">Baixar Agora!</button>
+                </form>
+            </div>
         </div>
-
-        <div class="quarto">
-
-            <div class="data">01/07/2019</div>
-            <div class="titulo">
-                <figure>
-                    <img src="logos/post1/Capa do Post.png" alt="imagemteste">
-                    <figcaption>
-                        <a href="posts/as-novas-tendencias-do-rh.html">
-                            As novas tendências do RH em 2019/2020
-                        </a>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="autor">Juliano Torres</div>
-            <div class="texto">
-                <a href="posts/as-novas-tendencias-do-rh.html">
-                    A cada dia que passa, o mercado de trabalho se torna mais competitivo...
-                </a>
-            </div>
-
-            <div class="data">01/07/2019</div>
-            <div class="titulo">
-                <figure>
-                    <img src="logos/post2/Capa do Post.png" alt="imagemteste">
-                    <figcaption>
-                        <a href="posts/tecnologia-na-gestao-de-pessoas.html">
-                            Tecnologia na gestão de pessoas
-                        </a>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="autor">Fábio Barcelos</div>
-            <div class="texto">
-                <a href="posts/tecnologia-na-gestao-de-pessoas.html">
-                    Todos os dias, surgem tendências e uma série de ferramentas vantajosas...
-                </a>
-            </div>
-
-            <div class="data">02/07/2019</div>
-            <div class="titulo">
-                <figure>
-                    <img src="logos/post3/Capa do Post.png" alt="imagemteste">
-                    <figcaption>
-                        <a href="posts/gestor-de-equipes.html">
-                            9 dicas para gestor de equipes
-                        </a>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="autor">Pedro Mendes</div>
-            <div class="texto">
-                <a href="posts/gestor-de-equipes.html">
-                    No cenário de empresarial atual para que colaboradores tenham sucesso...
-                </a>
-            </div>
-
-        </div>
-
-        <!--  <div class="quinto">
-            <div id="insta">
-                <a href="https://www.instagram.com/trilharh/">@trilharh
-                </a>
-            </div>
-        </div> -->
 
         <div class="sexto">
             <footer id="rodape">
@@ -254,7 +189,6 @@
             window.open('https://trilharh.com.br/ebook-trilharh.pdf', '_blank');
         }
     </script>
-
 </body>
 
 </html>

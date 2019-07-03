@@ -16,6 +16,39 @@ p{
     background-color: white;
 }
 
+.ebook{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    display: flex;
+}
+
+.ebook>h1{
+    font-family: 'FonteTit', sans-serif;
+    font-size: 30px;
+    line-height: 32px;
+    color: #363636;
+    margin-top: 10px;
+    width: 89.33%;
+    margin-left: 20px;
+}
+
+.ebook>h2{
+    font-family: 'FonteTit', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: black;
+    width: 89.33%;
+    margin-left: 20px;
+}
+
+#btn-ebook{
+    background-color: #008080;
+    color: white;
+    font-weight: bold;
+    border-radius: 0%;
+}
+
 .conteudo{
     /*height: 1893px;*/
     width: 100%;
@@ -24,9 +57,9 @@ p{
 }
 .primeiro{
     background-color: white;
-    /*height: 100px;
-    display: flex;
-    flex-direction: column;
+    /*height: 100px;*/
+    /*display: flex;*/
+    /*flex-direction: column;
     justify-content: flex-end;*/
 }
 
@@ -53,7 +86,7 @@ p{
 .terceiro{
     background-color: white;
     display: flex;
-    height: 346px;
+    /*height: 346px;*/
     flex-direction: column;
     box-shadow: 0px -0.25px 5px black;
 }
