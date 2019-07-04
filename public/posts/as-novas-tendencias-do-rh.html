@@ -28,21 +28,23 @@
 
     <!-- Facebook Pixel Code -->
     <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window,document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '279669396198198'); 
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '279669396198198');
         fbq('track', 'PageView');
     </script>
     <noscript>
-        <img height="1" width="1" 
-        src="https://www.facebook.com/tr?id=279669396198198&ev=PageView
-        &noscript=1"/>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=279669396198198&ev=PageView
+        &noscript=1" />
     </noscript>
     <!-- End Facebook Pixel Code -->
 </head>
@@ -51,7 +53,7 @@
     <div class="conteudo">
 
         <div class="primeiro">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
                 <a class="navbar-brand" href="https://trilharh.com.br/">
                     <div class="logo">
                         <img src="../logos/voltar-logo.svg" height="100%" usemap="#pag_inicial">
@@ -60,7 +62,7 @@
                         </map>
                     </div>
                 </a>
-                <a class="navbar-brand" href="../ebook-reduza-seu-turnover.html">
+                <a class="navbar-item" href="../ebook-reduza-seu-turnover.html">
                     <button class="btn" id="btn-ebook">Baixar nosso e-book</button>
                 </a>
                 <!--
@@ -84,12 +86,12 @@
 
         <div class="segundo">
             <div id="capa-post">
-                    <img src="../logos/post1/Capa do Post.png" class="img-fluid" alt="as-novas-tecnologias-do-rh">    
+                <img src="../logos/post1/Capa do Post.png" class="img-fluid" alt="as-novas-tecnologias-do-rh">
             </div>
         </div>
 
-        <div class="quarto">
-            <div class="textopost">
+        <div class="quarto row">
+            <div class="textopost col-lg-8 col-md-10">
                 <h1>As novas tendências do RH em 2019/2020</h1>
                 <p class="">
                     A cada dia que passa, o mercado de trabalho se torna mais competitivo, uma vez que grandes talentos
@@ -219,9 +221,37 @@
                 </div>
 
             </div>
+
+            <div class="formpost col-lg-3 col-md-10 ">
+                <div class=" col-sm-9">
+                    <h2>Ebook Gratuito! <br>
+                        Economize na hora de contratar
+                    </h2><br>
+                    <h5>13 dicas para reduzir seu turnover, contratar com maior assertividade e reter talentos.</h5><br>
+                </div>
+                <form name="leads" method="POST" data-netlify="true" netlify class="formulario" action="/index"
+                    onsubmit="downEbook()">
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><span class="far fa-user"></span></div>
+                        </div>
+                        <input type="text" required class="form-control " name="nome" id="lead-nome" size="30"
+                            maxlength="40" placeholder="Digite seu nome completo">
+                    </div>
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><span class="far fa-envelope"></span></div>
+                        </div>
+                        <input type="email" required class="form-control" name="email" id="lead-email" maxlength="120"
+                            placeholder="Digite aqui seu e-mail">
+                    </div>
+                    <input type="text" name="ip" id="lead-ip" hidden>
+                    <input type="text" name="datahora" id="lead-datahora" hidden>
+                    
+                    <button class="botao" id="fClickLead" type="submit">Baixar Agora!</button>
+                </form>
+            </div>
         </div>
-
-
         <div class="sexto">
             <footer id="rodape">
                 <h1> &copy; Copyright 2019 - by Trilha RH </h1>
@@ -267,6 +297,55 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
+        
+        $(document).ready(function () {
+            let data = new Date();
+            let mes = data.getMonth() + 1;
+            let dia = data.getDay();
+            let ano = data.getFullYear();
+
+            let hora = data.getHours();          // 0-23
+            let min = data.getMinutes();        // 0-59
+            let seg = data.getSeconds();        // 0-59
+
+            if (mes <= 9) {
+                let m = '0' + mes
+                mes = m
+            };
+
+            if (dia <= 9) {
+                let d = '0' + dia
+                dia = d
+            };
+
+            if (hora <= 9) {
+                let h = '0' + hora
+                hora = h
+            };
+            if (min <= 9) {
+                let mi = '0' + min
+                min = mi
+            };
+
+            if (seg <= 9) {
+                let s = '0' + seg
+                seg = s
+            };
+
+            let dataInc = `${ano}-${mes}-${dia}`;
+            let horaInc = `${hora}:${min}:${dia}`;
+            let datahora = `${dataInc} - ${horaInc}`
+            document.getElementById("lead-datahora").value = datahora;
+
+            $.getJSON("https://api.ipify.org?format=jsonp&callback=?", function (json) {
+                document.getElementById("lead-ip").value = json.ip;
+            });
+        });
+
+        function downEbook() {
+            window.open('https://trilharh.com.br/ebook-trilharh.pdf', '_blank');
+        }
+    </script>
 </body>
 
 </html>

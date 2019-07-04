@@ -28,21 +28,23 @@
 
     <!-- Facebook Pixel Code -->
     <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window,document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '279669396198198'); 
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '279669396198198');
         fbq('track', 'PageView');
     </script>
     <noscript>
-        <img height="1" width="1" 
-        src="https://www.facebook.com/tr?id=279669396198198&ev=PageView
-        &noscript=1"/>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=279669396198198&ev=PageView
+        &noscript=1" />
     </noscript>
     <!-- End Facebook Pixel Code -->
 </head>
@@ -50,7 +52,7 @@
 <body>
     <div class="conteudo">
         <div class="primeiro">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
                 <a class="navbar-brand" href="#">
                     <div class="logo">
                         <img src="logos/logo.png" height="100%" usemap="#pag_inicial">
@@ -59,7 +61,7 @@
                         </map>
                     </div>
                 </a>
-                <a class="navbar-brand" href="ebook-reduza-seu-turnover.html">
+                <a class="nav-item" href="ebook-reduza-seu-turnover.html" >
                     <button class="btn" id="btn-ebook">Baixar nosso e-book</button>
                 </a>
                 <!--
@@ -101,7 +103,7 @@
                             <div class="input-group-text"><span class="far fa-user"></span></div>
                         </div>
                         <input type="text" required class="form-control " name="nome" id="lead-nome" size="30"
-                            maxlength="40" placeholder="Digite seu nome">
+                            maxlength="40" placeholder="Digite seu nome completo">
                     </div>
                     <div class="form-group input-group">
                         <div class="input-group-prepend">
@@ -117,77 +119,82 @@
             </div>
         </div>
 
-        <div class="quarto">
-            <div class="data">03/07/2019</div>
-            <div class="titulo">
-                <figure>
-                    <img src="logos/post4/Capa do Post.png" alt="imagemteste">
-                    <figcaption>
-                        <a href="posts/perfil-comportamental.html">
-                            Como garantir o Fit Cultural entre a sua startup e seus clientes?
-                        </a>
-                    </figcaption>
-                </figure>
+        <div class="quarto row">
+            <div class="col-md-5">
+                <div class="data">03/07/2019</div>
+                <div class="titulo">
+                    <figure>
+                        <img src="logos/post4/Capa do Post.png" alt="imagemteste">
+                        <figcaption>
+                            <a href="posts/perfil-comportamental.html">
+                                Como garantir o Fit Cultural entre a sua startup e seus clientes?
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="autor">Thiago Moreno</div>
+                <div class="texto">
+                    <a href="posts/gestor-de-equipes.html">
+                        Os Zs nasceram no mundo já globalizado e têm facilidade e grande familiaridade com...
+                    </a>
+                </div>
             </div>
-            <div class="autor">Thiago Moreno</div>
-            <div class="texto">
-                <a href="posts/gestor-de-equipes.html">
-                    Os Zs nasceram no mundo já globalizado e têm facilidade e grande familiaridade com...
-                </a>
+            <div class="col-md-5">
+                <div class="data">02/07/2019</div>
+                <div class="titulo">
+                    <figure>
+                        <img src="logos/post3/Capa do Post.png" alt="imagemteste">
+                        <figcaption>
+                            <a href="posts/gestor-de-equipes.html">
+                                9 dicas para gestor de equipes
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="autor">Pedro Mendes</div>
+                <div class="texto">
+                    <a href="posts/gestor-de-equipes.html">
+                        No cenário de empresarial atual para que colaboradores tenham sucesso...
+                    </a>
+                </div>
             </div>
-
-            <div class="data">02/07/2019</div>
-            <div class="titulo">
-                <figure>
-                    <img src="logos/post3/Capa do Post.png" alt="imagemteste">
-                    <figcaption>
-                        <a href="posts/gestor-de-equipes.html">
-                            9 dicas para gestor de equipes
-                        </a>
-                    </figcaption>
-                </figure>
+            <div class="col-md-5">
+                <div class="data">01/07/2019</div>
+                <div class="titulo">
+                    <figure>
+                        <img src="logos/post1/Capa do Post.png" alt="Post Tendências do RH">
+                        <figcaption>
+                            <a href="posts/as-novas-tendencias-do-rh.html">
+                                As novas tendências do RH em 2019/2020
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="autor">Juliano Torres</div>
+                <div class="texto">
+                    <a href="posts/as-novas-tendencias-do-rh.html">
+                        A cada dia que passa, o mercado de trabalho se torna mais competitivo...
+                    </a>
+                </div>
             </div>
-            <div class="autor">Pedro Mendes</div>
-            <div class="texto">
-                <a href="posts/gestor-de-equipes.html">
-                    No cenário de empresarial atual para que colaboradores tenham sucesso...
-                </a>
-            </div>
-
-            <div class="data">01/07/2019</div>
-            <div class="titulo">
-                <figure>
-                    <img src="logos/post1/Capa do Post.png" alt="imagemteste">
-                    <figcaption>
-                        <a href="posts/as-novas-tendencias-do-rh.html">
-                            As novas tendências do RH em 2019/2020
-                        </a>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="autor">Juliano Torres</div>
-            <div class="texto">
-                <a href="posts/as-novas-tendencias-do-rh.html">
-                    A cada dia que passa, o mercado de trabalho se torna mais competitivo...
-                </a>
-            </div>
-
-            <div class="data">01/07/2019</div>
-            <div class="titulo">
-                <figure>
-                    <img src="logos/post2/Capa do Post.png" alt="imagemteste">
-                    <figcaption>
-                        <a href="posts/tecnologia-na-gestao-de-pessoas.html">
-                            Tecnologia na gestão de pessoas
-                        </a>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="autor">Fábio Barcelos</div>
-            <div class="texto">
-                <a href="posts/tecnologia-na-gestao-de-pessoas.html">
-                    Todos os dias, surgem tendências e uma série de ferramentas vantajosas...
-                </a>
+            <div class="col-md-5">
+                <div class="data">01/07/2019</div>
+                <div class="titulo">
+                    <figure>
+                        <img src="logos/post2/Capa do Post.png" alt="imagemteste">
+                        <figcaption>
+                            <a href="posts/tecnologia-na-gestao-de-pessoas.html">
+                                Tecnologia na gestão de pessoas
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="autor">Fábio Barcelos</div>
+                <div class="texto">
+                    <a href="posts/tecnologia-na-gestao-de-pessoas.html">
+                        Todos os dias, surgem tendências e uma série de ferramentas vantajosas...
+                    </a>
+                </div>
             </div>
         </div>
         <!--  <div class="quinto">
