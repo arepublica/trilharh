@@ -79,6 +79,12 @@ p{
     display: flex;
     justify-content: center;
 }
+.segundo>div#capa-post{
+    height: 100%;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+}
 
 .capa{
     height: 246px;
@@ -331,4 +337,17 @@ a:hover{
     line-height: 25px;
     font-size: 20px;
     color:#008080;
+}
+
+/*  configurações para os blogposts  */
+.img-meio-post {
+    height: 246px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-meio-post>div#centraliza{
+    height: 100%;
+    width: 320px;
 }
