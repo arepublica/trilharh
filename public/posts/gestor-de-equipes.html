@@ -295,7 +295,7 @@
 
             let dataInc = `${ano}-${mes}-${dia}`;
             let horaInc = `${hora}:${min}:${dia}`;
-            let datahora = `${dataInc} - ${horaInc}`
+            let datahora = `${dataInc} ${horaInc}`
             document.getElementById("lead-datahora").value = datahora;
 
             $.getJSON("https://api.ipify.org?format=jsonp&callback=?", function (json) {
