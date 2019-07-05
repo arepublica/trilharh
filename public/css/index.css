@@ -8,6 +8,10 @@
 	src: url("../fonts/Raleway-Bold.ttf");
 }
 
+body{
+    overflow-x: hidden;
+}
+
 h1,h2,h3,h4,h5{
     font-family: 'FonteTit', sans-serif;
 }
@@ -23,10 +27,11 @@ p{
 .ebook{
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 10px;
     display: flex;
     flex-direction:column;
     align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;   
 }
 
 .ebook>h1{
@@ -36,7 +41,6 @@ p{
     color: #363636;
     margin-top: 10px;
     width: 89.33%;
-    margin-left: 20px;
 }
 
 .ebook>h2{

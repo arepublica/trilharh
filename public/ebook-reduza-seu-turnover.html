@@ -28,21 +28,23 @@
 
     <!-- Facebook Pixel Code -->
     <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window,document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '279669396198198'); 
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '279669396198198');
         fbq('track', 'PageView');
     </script>
     <noscript>
-        <img height="1" width="1" 
-        src="https://www.facebook.com/tr?id=279669396198198&ev=PageView
-        &noscript=1"/>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=279669396198198&ev=PageView
+        &noscript=1" />
     </noscript>
     <!-- End Facebook Pixel Code -->
 </head>
@@ -50,16 +52,16 @@
 <body>
     <div class="conteudo">
         <div class="primeiro">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
                 <a class="navbar-brand" href="#">
                     <div class="logo">
-                        <img src="logos/logo.png" height="100%" usemap="#pag_inicial">
+                        <img src="../logos/voltar-logo.svg" height="100%" usemap="#pag_inicial">
                         <map name="pag_inicial">
-                            <area shape="circle" coords="25,25,25" href="https://trilharh.com.br/" target="_self">
+                            <area shape="rect" coords="0, 0, 73, 61" href="https://trilharh.com.br/" target="_self">
                         </map>
                     </div>
                 </a>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-item" href="#">
                     <button class="btn" id="btn-ebook">Baixar nosso e-book</button>
                 </a>
                 <!--
@@ -83,7 +85,7 @@
         </div>
 
         <div class="ebook row align-items-center">
-            <div class="col-sm-9">
+            <div class="titebook col-sm-9">
                 <h2>Ebook Gratuito! <br>
                     Economize na hora de contratar
                 </h2><br>
